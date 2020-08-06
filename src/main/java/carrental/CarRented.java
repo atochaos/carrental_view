@@ -9,9 +9,14 @@ public class CarRented extends AbstractEvent {
     private String returnDt;
     private String paymtNo;
     private String procStatus;
-    private String rentalNoNA;
-    private String rentalDvsnNA;
-    private String brwerCustNoNA;
+    private String rentalNoNa;
+    private String rentalDvsnNa;
+    private String brwerCustNoNa;
+    private Long point;
+
+    public CarRented(){
+        super();
+    }
 
     public Long getId() {
         return id;
@@ -63,24 +68,31 @@ public class CarRented extends AbstractEvent {
         this.procStatus = procStatus;
     }
     public String getRentalNoNa() {
-        return rentalNoNA;
+        return rentalNoNa;
     }
 
-    public void setRentalNoNa(String rentalNoNA) {
-        this.rentalNoNA = rentalNoNA;
+    public void setRentalNoNa(String rentalNoNa) {
+        this.rentalNoNa = rentalNoNa;
     }
     public String getRentalDvsnNa() {
-        return rentalDvsnNA;
+        return rentalDvsnNa;
     }
 
-    public void setRentalDvsnNa(String rentalDvsnNA) {
-        this.rentalDvsnNA = rentalDvsnNA;
+    public void setRentalDvsnNa(String rentalDvsnNa) {
+        this.rentalDvsnNa = rentalDvsnNa;
     }
     public String getBrwerCustNoNa() {
-        return brwerCustNoNA;
+        return brwerCustNoNa;
     }
 
-    public void setBrwerCustNoNa(String brwerCustNoNA) {
-        this.brwerCustNoNA = brwerCustNoNA;
+    public void setBrwerCustNoNa(String brwerCustNoNa) {
+        this.brwerCustNoNa = brwerCustNoNa;
+    }
+    public Long getPoint() {
+        return point;
+    }
+
+    public void setPoint(Long point) {
+        this.point = point;
     }
 }

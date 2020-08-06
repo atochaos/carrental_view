@@ -10,8 +10,13 @@ public class CarReserved extends AbstractEvent {
     private String returnDt;
     private Long rentalAmt;
     private String procStatus;
-    private String bookerMpnoNA;
-    private String bookerCustNoNA;
+    private String bookerMpnoNa;
+    private String bookerCustNoNa;
+    private Long point;
+
+    public CarReserved(){
+        super();
+    }
 
     public Long getId() {
         return id;
@@ -70,17 +75,24 @@ public class CarReserved extends AbstractEvent {
         this.procStatus = procStatus;
     }
     public String getBookerMpnoNa() {
-        return bookerMpnoNA;
+        return bookerMpnoNa;
     }
 
-    public void setBookerMpnoNa(String bookerMpnoNA) {
-        this.bookerMpnoNA = bookerMpnoNA;
+    public void setBookerMpnoNa(String bookerMpnoNa) {
+        this.bookerMpnoNa = bookerMpnoNa;
     }
     public String getBookerCustNoNa() {
-        return bookerCustNoNA;
+        return bookerCustNoNa;
     }
 
-    public void setBookerCustNoNa(String bookerCustNoNA) {
-        this.bookerCustNoNA = bookerCustNoNA;
+    public void setBookerCustNoNa(String bookerCustNoNa) {
+        this.bookerCustNoNa = bookerCustNoNa;
+    }
+    public Long getPoint() {
+        return point;
+    }
+
+    public void setPoint(Long point) {
+        this.point = point;
     }
 }

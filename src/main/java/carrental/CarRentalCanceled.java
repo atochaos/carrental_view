@@ -9,7 +9,12 @@ public class CarRentalCanceled extends AbstractEvent {
     private String rentalCncleDt;
     private String paymtNo;
     private String procStatus;
-    private String brwerCustNoNA;
+    private String brwerCustNoNa;
+    private Long point;
+
+    public CarRentalCanceled(){
+        super();
+    }
 
     public Long getId() {
         return id;
@@ -61,10 +66,17 @@ public class CarRentalCanceled extends AbstractEvent {
         this.procStatus = procStatus;
     }
     public String getBrwerCustNoNa() {
-        return brwerCustNoNA;
+        return brwerCustNoNa;
     }
 
-    public void setBrwerCustNoNa(String brwerCustNoNA) {
-        this.brwerCustNoNA = brwerCustNoNA;
+    public void setBrwerCustNoNa(String brwerCustNoNa) {
+        this.brwerCustNoNa = brwerCustNoNa;
+    }
+    public Long getPoint() {
+        return point;
+    }
+
+    public void setPoint(Long point) {
+        this.point = point;
     }
 }
